@@ -1,0 +1,48 @@
+.cavet {
+  font-family: "Caveat", cursive;
+  font-size: 50px;
+  margin: 30px 0;
+}
+.text-decoration {
+  text-decoration: underline;
+  text-decoration-color: #4a173c;
+}
+.block {
+  margin-bottom: 50px;
+  &-inline {
+    text-align: center;
+  }
+}
+.block__row {
+  background-color: #ffbffd;
+  border: 10px solid #ffa3f4;
+  border-radius: 10px;
+  &-flex {
+    display: flex;
+  }
+  &-inline {
+    display: inline-flex;
+  }
+  &-wrap {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-reverse {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+}
+.block__column {
+  background-color: #bfeeff;
+  border: 10px solid #a3f6ff;
+}
+.block__item {
+  background-color: #ddbfff;
+  border-radius: 10px;
+  color: #593175;
+  font-size: 50px;
+  font-weight: 600;
+  padding: 50px;
+}

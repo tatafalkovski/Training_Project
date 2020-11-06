@@ -1,0 +1,50 @@
+.section {
+  padding: 15px 40px 40px 40px;
+  position: relative;
+  margin: 35px 0;
+  border-radius: 10px;
+  width: 100%;
+
+  &-yellow {
+    @include sectionColors($yellow, $yellow-border, $yellow-dark);
+    p {
+      color: #735b39;
+    }
+  }
+
+  &-pink {
+    @include sectionColors($pink, $pink-border, $pink-dark);
+    p {
+      color: #752760;
+    }
+  }
+
+  &-blue {
+    @include sectionColors($blue, $blue-border, $blue-dark);
+    p {
+      color: #315175;
+    }
+  }
+
+  &-lavander {
+    @include sectionColors($lavander, $lavander-border, $lavander-dark);
+    p {
+      color: #593175;
+    }
+  }
+
+  &-mint {
+    @include sectionColors($mint, $mint-border, $mint-dark);
+    p {
+      color: #316949;
+    }
+  }
+}
+
+.topic-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
