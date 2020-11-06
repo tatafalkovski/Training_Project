@@ -1,24 +1,25 @@
 @import "mixin";
-@import "variables.scss";
-@import "normalize.scss";
-@import "header.scss";
-@import "block.scss";
-@import "flex-box.scss";
+@import "variables";
+@import "normalize";
+@import "block";
+@import "flex-box";
 
 body {
-  // background-color: #f7fffa;
+  background-color: #f7fffa;
   background-image: url(/images/bg-repeat.jpg);
   // background-attachment: fixed;
 }
 
 h1 {
   font-size: 60px;
+  font-weight: 600;
   text-align: center;
   text-transform: uppercase;
-  color: #3e694d;
+  color: #195441;
 }
 h2 {
   font-size: 40px;
+  font-weight: 500;
   color: #4a173c;
   margin: 50px 0;
 }
