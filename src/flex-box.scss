@@ -3,19 +3,29 @@
   font-size: 50px;
   margin: 30px 0;
 }
+
+span {
+  font-family: "Grandstander", cursive;
+  font-size: 40px;
+  color: #000000;
+  text-decoration: underline $blue-border;
+}
+
 .text-decoration {
   text-decoration: underline;
   text-decoration-color: #4a173c;
 }
+
 .block {
   margin-bottom: 50px;
   &-inline {
     text-align: center;
   }
 }
+
 .block__row {
-  background-color: #ffbffd;
-  border: 10px solid #ffa3f4;
+  background-color: $pink;
+  border: 10px solid $pink-border;
   border-radius: 10px;
   &-flex {
     display: flex;
@@ -33,15 +43,30 @@
     display: flex;
     flex-wrap: wrap-reverse;
   }
+  &-direction {
+    display: flex;
+    flex-direction: row;
+  }
+  &-direction-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 .block__column {
-  background-color: #bfeeff;
-  border: 10px solid #a3f6ff;
+  background-color: $blue;
+  border: 10px solid $blue-border;
+  &-1 {
+  }
+  &-2 {
+  }
+  &-3 {
+  }
 }
+
 .block__item {
-  background-color: #ddbfff;
+  background-color: $lavander;
   border-radius: 10px;
-  color: #593175;
+  color: $lavander-font;
   font-size: 50px;
   font-weight: 600;
   padding: 50px;

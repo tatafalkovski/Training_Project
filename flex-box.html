@@ -41,8 +41,9 @@
         </div>
         <h2 class="text-decoration">Display: inline-flex;</h2>
         <p class="cavet">
-          Если родителю flex-контейнера .block задать значение text-align:
-          center; элемент выровняется по центру:
+          Если родителю <span>flex-</span>контейнера <span>.block</span> задать
+          значение <span>text-align: center;</span> элемент выровняется по
+          центру:
         </p>
         <div class="wraper">
           <div class="block block-inline">
@@ -63,9 +64,10 @@
           Flex-wrap позволяет переносить элементы если им не хватает места.
           Поумолчанию используется:
         </p>
-        <p class="cavet">Flex-wrap: nowrap;</p>
+        <p class="cavet"><span>Flex-wrap: nowrap;</span></p>
         <p class="cavet">
-          flex-wrap: wrap; -- переносит элементы на следующую строку
+          <span>flex-wrap: wrap;</span> -- переносит элементы на следующую
+          строку
         </p>
         <div class="wraper">
           <div class="block">
@@ -83,7 +85,8 @@
           </div>
         </div>
         <p class="cavet">
-          flex-wrap: wrap-reverse; -- переносит элементы в обратном порядке
+          <span>flex-wrap: wrap-reverse;</span> -- переносит элементы в обратном
+          порядке
         </p>
         <div class="wraper">
           <div class="block">
@@ -101,9 +104,86 @@
           </div>
         </div>
       </section>
+
       <section class="section section-pink">
         <h2 class="text-decoration">Properties flex-elements</h2>
-        <p class="cavet">Свойства flex-элементов</p>
+        <p class="cavet">Свойства <span>flex-</span>элементов</p>
+        <p class="cavet">
+          Свойство <span>Align-self</span> -- переопеделяет выравнивание.
+          Рабоатет как <span>align-items</span>, только применяется
+          непосредственно к <span>flex-</span>элементам
+        </p>
+        <div class="img-screen">
+          <img src="/images/screen-align-self.png" alt="" />
+        </div>
+        <p class="cavet"><span>Flex-basis</span> базовый размер элемента</p>
+        <p class="cavet">
+          <span>flex-basis: auto;</span> -- значение по умолчанию
+        </p>
+        <p class="cavet">
+          Помимо значения по умочлачнию можно указывать размер в %, px, и тд
+        </p>
+        <p class="cavet">
+          <span>Flex-grow</span> -- контролирует возможность увеличиваться
+          относительно бызового размера (flex-basis)
+        </p>
+        <p class="cavet"><span>Flex-grow: 0;</span> -- Значение по умолчанию</p>
+        <p class="cavet">
+          Если указать значение 1 тогда элементы заполнят флекс-контейнер по
+          ширине
+        </p>
+        <p class="cavet">
+          <span>Flex-shrink</span> -- контролирует возможность уменьшатся в
+          размере. Значение по умолчанию 1, т.е. ему разрешено уменьшатся в
+          размере. Если устонвить значение 0, тогда флекс-элементы не смогут
+          уменьшаться в размере меньше чем указано базовое(flex-basis) значение.
+        </p>
+        <p class="cavet">Более компактная запись выглядит таким образом:</p>
+        <p class="cavet">
+          <span>flex: 0 1 auto; -- 0-grow, 1-shrink, auto-basis</span>
+        </p>
+      </section>
+
+      <section class="section section-blue">
+        <h2 class="text-decoration">Flex-direction</h2>
+        <p class="cavet">
+          <span>flex-direction: row;</span> -- значение поумолчанию, располагает
+          элементы в ряд.
+        </p>
+        <div class="wraper">
+          <div class="block">
+            <div class="block__row block__row-direction">
+              <div class="block__column block__column-1">
+                <div class="block__item">1</div>
+              </div>
+              <div class="block__column block__column-2">
+                <div class="block__item">2</div>
+              </div>
+              <div class="block__column block__column-3">
+                <div class="block__item">3</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="cavet">
+          <span>flex-direction: row-reverse;</span> -- разворачивает контейнер в
+          другую сторону
+        </p>
+        <div class="wraper">
+          <div class="block">
+            <div class="block__row block__row-direction-reverse">
+              <div class="block__column block__column-1">
+                <div class="block__item">1</div>
+              </div>
+              <div class="block__column block__column-2">
+                <div class="block__item">2</div>
+              </div>
+              <div class="block__column block__column-3">
+                <div class="block__item">3</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <script src="dist/script.js"></script>

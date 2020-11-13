@@ -28,3 +28,13 @@ p {
   font-size: 25px;
   line-height: 50px;
 }
+
+.img-screen {
+  img {
+    border-radius: 25px;
+    overflow: hidden;
+    border: 5px solid $lavander-border;
+    width: 70%;
+    height: 70%;
+  }
+}
