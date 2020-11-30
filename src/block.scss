@@ -1,9 +1,10 @@
 .section {
-  padding: 40px 40px 40px 40px;
+  padding: 10px;
   position: relative;
   margin: 35px 0;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 100%;
+  min-width: 300px;
 
   &-yellow {
     @include sectionColors($yellow, $yellow-border, $yellow-dark, $yellow-font);
@@ -31,10 +32,26 @@
   }
 }
 
+.section-width {
+  width: 30%;
+}
+
+.top-container {
+  width: 100%;
+  padding: 30px;
+  margin: 0;
+}
+
 .topic-link {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
