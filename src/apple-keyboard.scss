@@ -1,0 +1,32 @@
+// My stylesheet:::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+// .board {
+//     background-color: $yellow;
+//     padding: 10px;
+//     border-radius: 5px;
+//     box-shadow: -6px 6px 11px -4px $yellow-dark;
+    // display: grid;
+    // justify-items: stretch;
+    // align-items: stretch;
+    // justify-content: space-between;
+// }
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn0, .btn1, .btn2, .btn3, .btn4, .btn5, .btn6 {
+    border-radius: 3px;
+    background-color: $yellow;
+    padding: 5px;
+    margin: 10px 5px;
+    border: 2px solid $lavander-border;
+    box-shadow: -3px -3px 4px -1px $lavander-dark;
+    flex-grow: 1;
+}
+.btn1r, .btn2r, .btn3r, .btn4r, .btn5r, .btn6r {
+    font-size: 16px;
+    text-decoration: none;
+}
